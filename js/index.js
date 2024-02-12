@@ -126,7 +126,7 @@ $(function () {
 					if ($(this).hasClass('showLayer')) {
 						$('.photoShade').remove();
 						$(this).css({
-							transformOrigin:'50% 120%',
+							transformOrigin:'50% 400%',
 							transform: ' rotate('+(-parentObj.config.angle)+'deg) translate(-'+parentObj.config.moreWidth+'px,-100px)',	
 						});
 						setTimeout(function () {

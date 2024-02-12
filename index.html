@@ -29,6 +29,10 @@
 	.btn.next:hover {
 	background-color: #e0e0e0; /* 设置鼠标悬停时的背景颜色 */
 	}
+	.large-button {
+		width: 200px;
+		height: 50px;
+	  }
 	  </style>
 </head>
 <body>
@@ -46,6 +50,14 @@
 			<a class="btn next" href="#">下一页</a>
 		</div>
 	</div>
-	<audio src="audio/music.mp3" autoplay loop></audio>
+	<audio id="play" src="audio/music.mp3" loop></audio>
+<button class="large-button" onclick="playAudio()">播放音乐</button>
+
+<script>
+  function playAudio() {
+    var audio = document.getElementById("play");
+    audio.play();
+  }
+</script>
 </body>
 </html>
