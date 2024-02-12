@@ -9,7 +9,7 @@ a{
 	text-decoration: none;
 }
 body{
-	background-image: url('../img/bg.jpg');
+	background-image: url('../img/background.png');
 	background-size: cover;
 	background-position: center;
 	box-sizing: border-box;
@@ -29,6 +29,7 @@ body{
 	letter-spacing:10px;
 }
 .pic-list li{
+	/* 350,210 */
 	width: 350px;
 	height: 210px;
 	position: absolute;
