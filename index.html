@@ -2,36 +2,50 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>相册</title>
+	<title>杨杨和颖颖的美好时光</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<style>
+		body {
+		  background-image: url("img/background.png");
+		  background-size: cover;
+		  background-repeat: repeat;
+		}
+		.btn.prev,
+	.btn.next {
+	font-size: 50px; /* 设置字体大小 */
+	color: black; /* 设置字体颜色 */
+	padding: 20px 40px; /* 设置内边距 */
+	margin: 20px; /* 设置外边距 */
+	background-color: #f2f2f2; /* 设置背景颜色 */
+	border: none; /* 移除边框 */
+	border-radius: 5px; /* 设置圆角 */
+	text-decoration: none; /* 移除下划线 */
+	}
+
+	.btn.prev:hover,
+	.btn.next:hover {
+	background-color: #e0e0e0; /* 设置鼠标悬停时的背景颜色 */
+	}
+	  </style>
 </head>
 <body>
 	<div class="photos">
 		<h2 class="title-page"> <span id="curPage"></span>/<span id="pageCount"></span></h2>
 		<ul class="pic-list">
-			<li><img src="img/01.jpg" alt=""></li>
-			<li><img src="img/02.jpg" alt=""></li>
-			<li><img src="img/03.jpg" alt=""></li>
-			<li><img src="img/04.jpg" alt=""></li>
-			<li><img src="img/05.jpg" alt=""></li>
-			<li><img src="img/06.jpg" alt=""></li>
-			<li><img src="img/07.jpg" alt=""></li>
-			<li><img src="img/08.jpg" alt=""></li>
-			<li><img src="img/09.jpg" alt=""></li>
-			<li><img src="img/10.jpg" alt=""></li>
-			<li><img src="img/11.jpg" alt=""></li>
-			<li><img src="img/12.jpg" alt=""></li>
-			<li><img src="img/13.jpg" alt=""></li>
-			<li><img src="img/14.jpg" alt=""></li>
-			<li><img src="img/15.jpg" alt=""></li>
+			<script type="text/javascript">
+				for (var i = 1; i <= 185; i++) {
+				  document.write('<li><img src="img/' + i + '.png" alt=""></li>');
+				}
+			  </script>
 		</ul>
 		<div class="btn-group">
 			<a class="btn prev" href="#">上一页</a>
 			<a class="btn next" href="#">下一页</a>
 		</div>
 	</div>
+	<audio src="audio/music.mp3" autoplay loop></audio>
 </body>
 </html>
