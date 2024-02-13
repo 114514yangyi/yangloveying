@@ -28,7 +28,7 @@ $(function () {
         currIndex = -1;
 
 
-    fetch('data.json')
+    fetch('https://114514yangyi.github.io/yangloveying/begin/player/js/data.json')
         .then(response => response.json()) // 解析 JSON 数据
         .then(data => {
             // 从 JSON 数据中获取相应的数组
