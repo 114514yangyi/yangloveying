@@ -28,52 +28,9 @@ $(function () {
         currIndex = -1;
 
 
-    fetch('js/data.json')
-        .then(response => response.json()) // 解析 JSON 数据
-        .then(data => {
-            // 从 JSON 数据中获取相应的数组
-            albums = data.albums;
-            trackNames = data.trackNames;
-            albumArtworks = data.albumArtworks;
-            trackUrl = data.trackUrl;
 
-            // 输出导入的数据
 
-        })
-        .catch(error => {
-            console.log('Error:', error);
-        });
-    console.log(albums);
-    console.log(trackNames);
-    console.log(albumArtworks);
-    console.log(trackUrl);
-    // var jsonData = {
-    //     "albums": ["Dawn", "Me & You", "Electro Boy", "Home", "Proxy (Original Mix)"],
-    //     "trackNames": [
-    //         "Skylike - Dawn",
-    //         "Alex Skrindo - Me & You",
-    //         "Kaaze - Electro Boy",
-    //         "Jordan Schor - Home",
-    //         "Martin Garrix - Proxy"
-    //     ],
-    //     "albumArtworks": ["_1", "_2", "_3", "_4", "_5"],
-    //     "trackUrl": [
-    //         "images/2.mp3",
-    //         "images/1.mp3",
-    //         "images/3.mp3",
-    //         "images/4.mp3",
-    //         "images/5.mp3"
-    //     ]
-    // };
-    // var albums = jsonData.albums;
-    // var trackNames = jsonData.trackNames;
-    // var albumArtworks = jsonData.albumArtworks;
-    // var trackUrl = jsonData.trackUrl;
 
-    // console.log(albums);
-    // console.log(trackNames);
-    // console.log(albumArtworks);
-    // console.log(trackUrl);
 
     function playPause() {
         setTimeout(function () {
@@ -294,6 +251,24 @@ $(function () {
             selectTrack(1);
         });
     }
+    fetch('https://114514yangyi.github.io/yangloveying/begin/player/js/data.json')
+        .then(response => response.json()) // 解析 JSON 数据
+        .then(data => {
+            // 从 JSON 数据中获取相应的数组
+            albums = data.albums;
+            trackNames = data.trackNames;
 
-    initPlayer();
+            for (var i = 1; i <= albums.length; i++) {
+                albumArtworks.push("_" + i);
+            }
+
+            trackUrl = data.trackUrl;
+
+            // 输出导入的数据
+            initPlayer();
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
+
 });
