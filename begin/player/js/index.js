@@ -32,21 +32,21 @@ $(function () {
         .then(response => response.json()) // 解析 JSON 数据
         .then(data => {
             // 从 JSON 数据中获取相应的数组
-            var albums = data.albums;
-            var trackNames = data.trackNames;
-            var albumArtworks = data.albumArtworks;
-            var trackUrl = data.trackUrl;
+            albums = data.albums;
+            trackNames = data.trackNames;
+            albumArtworks = data.albumArtworks;
+            trackUrl = data.trackUrl;
 
             // 输出导入的数据
-            console.log(albums);
-            console.log(trackNames);
-            console.log(albumArtworks);
-            console.log(trackUrl);
+
         })
         .catch(error => {
             console.log('Error:', error);
         });
-
+    console.log(albums);
+    console.log(trackNames);
+    console.log(albumArtworks);
+    console.log(trackUrl);
     // var jsonData = {
     //     "albums": ["Dawn", "Me & You", "Electro Boy", "Home", "Proxy (Original Mix)"],
     //     "trackNames": [
