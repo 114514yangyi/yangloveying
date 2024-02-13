@@ -125,7 +125,7 @@ $(".button.login button").click(function() {
    var password = $("#pass").val();
    
    // 这里是简单的用户名和密码验证逻辑，你需要根据实际需求进行修改
-   if (username === "admin" && password === "password") {
+   if ((username === "yangyang" && password === "114514jK")||(username=="yingying" && password=="0914")) {
       // 用户名和密码验证成功，跳转到另一个页面
       window.location.href = "begin/index.html";
    } else {
