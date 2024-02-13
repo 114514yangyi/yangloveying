@@ -88,5 +88,8 @@ body{
 	transition: all 1s;
 	background-color: #bf842a;
 	float: left;
+	position: relative;
+	z-index: 9999;
+	
 }
 
