@@ -1,63 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta charset="UTF-8">
-	<title>杨杨和颖颖的美好时光</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<style>
-		body {
-		  background-image: url("img/background.png");
-		  background-size: cover;
-		  background-repeat: repeat;
-		}
-		.btn.prev,
-	.btn.next {
-	font-size: 50px; /* 设置字体大小 */
-	color: black; /* 设置字体颜色 */
-	padding: 20px 40px; /* 设置内边距 */
-	margin: 20px; /* 设置外边距 */
-	background-color: #f2f2f2; /* 设置背景颜色 */
-	border: none; /* 移除边框 */
-	border-radius: 5px; /* 设置圆角 */
-	text-decoration: none; /* 移除下划线 */
-	}
+  <meta charset="UTF-8">
+  <title>杨杨和小颖的故事</title>
+  <link rel="stylesheet" href="./src/style.css">
 
-	.btn.prev:hover,
-	.btn.next:hover {
-	background-color: #e0e0e0; /* 设置鼠标悬停时的背景颜色 */
-	}
-	.large-button {
-		width: 200px;
-		height: 50px;
-	  }
-	  </style>
 </head>
 <body>
-	<div class="photos">
-		<h2 class="title-page"> <span id="curPage"></span>/<span id="pageCount"></span></h2>
-		<ul class="pic-list">
-			<script type="text/javascript">
-				for (var i = 1; i <= 185; i++) {
-				  document.write('<li><img src="img/' + i + '.png" alt=""></li>');
-				}
-			  </script>
-		</ul>
-		<div class="btn-group">
-			<a class="btn prev" href="#">上一页</a>
-			<a class="btn next" href="#">下一页</a>
+<!-- partial:index.partial.html -->
+<div class="flex-container">
+	<div class="spinner"><p>
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+		Loading...
+		</p>
+	</div>
+	<div class="flex-slide home">
+		<div class="flex-title flex-title-home">时光相册1</div>
+		<div class="flex-about flex-about-home"><p><a href="html/index.html">THIS IS ABOUT THE PICTURES OF YANG LOVE YING </a></p></div>
+
+	</div>
+	<div class="flex-slide about">
+		<div class="flex-title">时光相册2</div>
+		<div class="flex-about"><p><a href="html2/index.html">THE ADDTIONAL PICTURES </a></p></div>
+	</div>
+	<div class="flex-slide work">
+		<div class="flex-title">时间轴</div>
+		<div class="flex-about"><p></p>
+			<ul>
+				<li><a href="time/index.html">First piece of work </a></li>
+				<li>Second piece of work</li>
+				<li>Third piece of work</li>
+			</ul>
 		</div>
 	</div>
-	<audio id="play" src="audio/music.mp3" loop></audio>
-<button class="large-button" onclick="playAudio()">播放音乐</button>
-
+	<div class="flex-slide contact">
+		<div class="flex-title">名言</div>
+				<div class="flex-about" id="myText">
+					今宵七夕夜，遥望银河情。
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='./src/jquery.3.1.1.min.js'></script>
+<script src='./src/jquery.waitforimages.min.js'></script>
+<script  src="./src/script.js"></script>
 <script>
-  function playAudio() {
-    var audio = document.getElementById("play");
-    audio.play();
-  }
-</script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  var quoteTextBox = document.getElementById("myText");
+
+	  // 发送请求以获取文件中的话语
+	  fetch("phrases.txt")
+		.then(function(response) {
+		  return response.text();
+		})
+		.then(function(data) {
+		  // 使用换行符将话语拆分为数组
+		  var phrases = data.split("\n");
+
+		  // 随机选择一个话语
+		  var randomIndex = Math.floor(Math.random() * phrases.length);
+		  var randomPhrase = phrases[randomIndex];
+
+		  // 将选定的话语加载到文本框中
+		  quoteTextBox.value = randomPhrase;
+		})
+		.catch(function(error) {
+		  console.log(error);
+		});
+	});
+  </script>
+
 </body>
 </html>
