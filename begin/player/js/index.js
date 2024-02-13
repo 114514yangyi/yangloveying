@@ -23,6 +23,7 @@ $(function () {
         trackNames = [],
         albumArtworks = [],
         trackUrl = [],
+        bk=[],
         playPreviousTrackButton = $('#play-previous'),
         playNextTrackButton = $('#play-next'),
         currIndex = -1;
@@ -212,7 +213,8 @@ $(function () {
             albumArt.find('img.active').removeClass('active');
             $('#' + currArtwork).addClass('active');
 
-            bgArtworkUrl = $('#' + currArtwork).attr('src');
+            // bgArtworkUrl = $('#' + currArtwork).attr('src');
+            bgArtworkUrl=bk[currIndex]
 
             bgArtwork.css({
                 'background-image': 'url(' + bgArtworkUrl + ')'
@@ -263,7 +265,9 @@ $(function () {
             }
 
             trackUrl = data.trackUrl;
+            bk=data.bk;
 
+            console.log(albums)
             // 输出导入的数据
             initPlayer();
         })
