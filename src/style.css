@@ -238,6 +238,21 @@ textarea {
   animation-delay: -0.9s;
 }
 
+.large-button {
+  width: 200px;
+  height: 50px;
+  background-color: antiquewhite;
+  }
+
+  a {
+    color: #dde7f1; /* Font color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  a:hover {
+    color: #32ddf0; /* Font color on hover */
+  }
 @-webkit-keyframes sk-cubemove {
   25% {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);

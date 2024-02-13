@@ -1,75 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>杨杨和小颖的故事</title>
-  <link rel="stylesheet" href="./src/style.css">
+	<meta charset="UTF-8">
+	<title>杨杨和小颖的故事</title>
+	<link rel="stylesheet" href="./src/style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="flex-container">
-	<div class="spinner"><p>
-		<div class="cube1"></div>
-		<div class="cube2"></div>
-		Loading...
-		</p>
-	</div>
-	<div class="flex-slide home">
-		<div class="flex-title flex-title-home">时光相册1</div>
-		<div class="flex-about flex-about-home"><p><a href="html/index.html">THIS IS ABOUT THE PICTURES OF YANG LOVE YING </a></p></div>
+	<!-- partial:index.partial.html -->
+	<div class="flex-container">
+		<div class="spinner">
+			<p>
+			<div class="cube1"></div>
+			<div class="cube2"></div>
+			Loading...
+			</p>
+		</div>
+		<div class="flex-slide home">
+			<div class="flex-title flex-title-home">岁月留香</div>
+			<div class="flex-about flex-about-home">
+				<p><a href="html/index.html"> 那时我们有梦，关于文学，关于爱情，关于穿越世界的旅行。如今我们深夜饮酒，杯子碰到一起，都是梦破碎的声音。</a></p>
+			</div>
 
-	</div>
-	<div class="flex-slide about">
-		<div class="flex-title">时光相册2</div>
-		<div class="flex-about"><p><a href="html2/index.html">THE ADDTIONAL PICTURES </a></p></div>
-	</div>
-	<div class="flex-slide work">
-		<div class="flex-title">时间轴</div>
-		<div class="flex-about"><p></p>
-			<ul>
-				<li><a href="time/index.html">First piece of work </a></li>
-				<li>Second piece of work</li>
-				<li>Third piece of work</li>
-			</ul>
+		</div>
+		<div class="flex-slide about">
+			<div class="flex-title">镜中春梦</div>
+			<div class="flex-about">
+				<p><a href="html2/index.html"> 在青山绿水之间，我想牵着你的手，走过这座桥，桥上是绿叶红花，桥下是流水人家，桥的那头是青丝，桥的这头是白发。</a></p>
+			</div>
+		</div>
+		<div class="flex-slide work">
+			<div class="flex-title">时光漫步</div>
+			<div class="flex-about">
+				<p></p>
+				<a href="time/index.html">答案很长，我准备用一生时间来回答，你准备听了吗？</a>
+			
+			</div>
+		</div>
+		<div class="flex-slide contact">
+			<div class="flex-title">静谧之美</div>
+			<div class="flex-about" id="myText">
+				红尘陌上，独自行走，绿萝拂过衣襟，青云打湿诺言。山和水可以两两相忘，日与月可以毫无瓜葛。那时候，只一个人的浮世清欢，一个人的细水长流。
+
+				<audio id="play"
+					src="https://ra-sycdn.kuwo.cn/c6fbb6493f443b7358eef1bd2e266a77/65caf440/resource/n2/128/37/88/3607052134.mp3?from=vip"
+					loop></audio>
+				<button class="large-button" onclick="playAudio()">播放音乐</button>
+
+				<script>
+					function playAudio() {
+						var audio = document.getElementById("play");
+						audio.play();
+					}
+				</script>
+			</div>
+
 		</div>
 	</div>
-	<div class="flex-slide contact">
-		<div class="flex-title">名言</div>
-				<div class="flex-about" id="myText">
-					今宵七夕夜，遥望银河情。
-		</div>
-	</div>
-</div>
-<!-- partial -->
-  <script src='./src/jquery.3.1.1.min.js'></script>
-<script src='./src/jquery.waitforimages.min.js'></script>
-<script  src="./src/script.js"></script>
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-	  var quoteTextBox = document.getElementById("myText");
+	<!-- partial -->
+	<script src='./src/jquery.3.1.1.min.js'></script>
+	<script src='./src/jquery.waitforimages.min.js'></script>
+	<script src="./src/script.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var quoteTextBox = document.getElementById("myText");
 
-	  // 发送请求以获取文件中的话语
-	  fetch("phrases.txt")
-		.then(function(response) {
-		  return response.text();
-		})
-		.then(function(data) {
-		  // 使用换行符将话语拆分为数组
-		  var phrases = data.split("\n");
+			// 发送请求以获取文件中的话语
+			fetch("phrases.txt")
+				.then(function (response) {
+					return response.text();
+				})
+				.then(function (data) {
+					// 使用换行符将话语拆分为数组
+					var phrases = data.split("\n");
 
-		  // 随机选择一个话语
-		  var randomIndex = Math.floor(Math.random() * phrases.length);
-		  var randomPhrase = phrases[randomIndex];
+					// 随机选择一个话语
+					var randomIndex = Math.floor(Math.random() * phrases.length);
+					var randomPhrase = phrases[randomIndex];
 
-		  // 将选定的话语加载到文本框中
-		  quoteTextBox.value = randomPhrase;
-		})
-		.catch(function(error) {
-		  console.log(error);
+					// 将选定的话语加载到文本框中
+					quoteTextBox.value = randomPhrase;
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
 		});
-	});
-  </script>
+	</script>
 
 </body>
+
 </html>
