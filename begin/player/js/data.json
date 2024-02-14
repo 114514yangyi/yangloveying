@@ -1,18 +1,22 @@
 {
-    "albums": ["白羊","剃须刀"],
-    "trackNames": [
-
-      "白羊 - 徐秉龙,沈以诚",
-      "沈以诚"
-    ],
-    "trackUrl": [
-
-      "https://m804.music.126.net/20240213233835/16408c6afe1e8a494e25199982c19140/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481660549/b028/6663/2259/462bb1920e497ce9354772f46fd79193.mp3?_authSecret=0000018da307d46a04fe0aaba1432125",
-      "http://m10.music.126.net/20240214233615/b6d6952a4e197c18c56e2abeb0e75de5/ymusic/535b/0e0f/0108/d1441f404f9e32246a7e6b834cb890e3.mp3"
-    ],
-    "bk":[
-
-      "https://i.biliimg.com/bfs/im/d3e3d866ebbd4301f8eb4d1a54e1daa2a7012061.jpg@1000w_1000h_1c.webp",
-      "http://p4.music.126.net/PpNyvE_cEPgEwkF3poYaow==/109951164582948890.jpg?param=300x300"
-    ]
-  }
+  "albums": [
+    "\u767d\u7f8a",
+    "\u5243\u987b\u5200",
+    "\u7231\u5c31\u4e00\u4e2a\u5b57"
+  ],
+  "trackNames": [
+    "\u767d\u7f8a - \u5f90\u79c9\u9f99,\u6c88\u4ee5\u8bda",
+    "\u6c88\u4ee5\u8bda",
+    "\u7231\u5c31\u4e00\u4e2a\u5b57 - \u5f20\u4fe1\u54f2"
+  ],
+  "trackUrl": [
+    "https://m804.music.126.net/20240213233835/16408c6afe1e8a494e25199982c19140/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481660549/b028/6663/2259/462bb1920e497ce9354772f46fd79193.mp3?_authSecret=0000018da307d46a04fe0aaba1432125",
+    "http://m10.music.126.net/20240214233615/b6d6952a4e197c18c56e2abeb0e75de5/ymusic/535b/0e0f/0108/d1441f404f9e32246a7e6b834cb890e3.mp3",
+    "https://lx-sycdn.kuwo.cn/e0d2ad6f6a465a2cf8a2b6d820b0d697/65ccd9f3/resource/n3/19/77/1283165821.mp3?from=vip"
+  ],
+  "bk": [
+    "https://i.biliimg.com/bfs/im/d3e3d866ebbd4301f8eb4d1a54e1daa2a7012061.jpg@1000w_1000h_1c.webp",
+    "http://p4.music.126.net/PpNyvE_cEPgEwkF3poYaow==/109951164582948890.jpg?param=300x300",
+    "https://img4.kuwo.cn/star/albumcover/120/94/90/1956406170.jpg"
+  ]
+}
