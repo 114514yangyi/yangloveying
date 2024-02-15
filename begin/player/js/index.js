@@ -30,8 +30,7 @@ $(function () {
 
 
 
-
-
+        
 
     function playPause() {
         setTimeout(function () {
@@ -266,6 +265,14 @@ $(function () {
 
             trackUrl = data.trackUrl;
             bk=data.bk;
+
+
+ 
+
+
+console.log(trackNames);
+console.log(albumArtworks);
+console.log(trackUrl);
 
             console.log(albums)
             // 输出导入的数据
