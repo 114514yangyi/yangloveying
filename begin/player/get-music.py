@@ -1,8 +1,11 @@
 import requests
 from lxml import etree
+import sys
+
+name=sys.argv[1]
 
 url="https://www.gequbao.com/s"
-question="/爱就一个字"
+question="/"+name
 headers={"User-Agent" : "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" }
 
 response=requests.get(url=url+question,headers=headers)
@@ -40,14 +43,26 @@ content=response.json()
 
 download=content["data"]["url"]
 
-import json
-with open("/home/huyang/gift/begin/player/js/data.json","r") as fp:
-    var=json.load(fp)
-    
-var["albums"].append(album)
-var["trackNames"].append(message)
-var["trackUrl"].append(download)
-var["bk"].append(cover)
+print(album)
+print(artist)
+print(download)
+print(cover)
 
-with open("/home/huyang/gift/begin/player/js/data.json","w") as fp:
-    json.dump(var,fp)
+choice=input("是否要加载？n/y")
+
+if choice=="y":
+
+    import json
+    with open("/home/huyang/gift/begin/player/js/data.json","r") as fp:
+        var=json.load(fp)
+        
+    var["albums"].append(album)
+    var["trackNames"].append(message)
+    var["trackUrl"].append(download)
+    var["bk"].append(cover)
+
+    with open("/home/huyang/gift/begin/player/js/data.json","w") as fp:
+        json.dump(var,fp)
+else  :
+    pass
+
