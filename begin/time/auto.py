@@ -1,17 +1,27 @@
-import sys
-arguments=sys.argv
-year=arguments[1]
-time=arguments[2]
-title=arguments[3]
-content=arguments[4]
-img=arguments[5]
+# Time: 2021/08/15 15:00
+import pyperclip
 
 
 
-print('<div class="mk-tl-item">'
+img=input("img:")
+year=input("year:")
+time=input("time:")
+title=input("title:")
+content=input("content:")
+
+
+  
+img = content["img"]
+year = content["year"]
+time = content["time"]
+title = content["title"]
+content = content["content"]
+
+output = ('<div class="mk-tl-item">'
       '<div class="mk-tl-event">'
       '<div class="mk-tl-dot">'
       f'<img src="{img}" />'
+      '</div>'
       '</div>'
       '<div class="mk-tl-date">'
       f'<span class="mk-tl-year">{year}</span>'
@@ -19,9 +29,10 @@ print('<div class="mk-tl-item">'
       '</div>'
       '<div class="mk-tl-content">'
       f'<div class="mk-tl-title">{title}</div>'
-      '<p>'
-      f'{content}'
-      '</p>'
       '</div>'
       '</div>'
       '</div>')
+
+pyperclip.copy(output)
+#将output写入裁剪板
+
