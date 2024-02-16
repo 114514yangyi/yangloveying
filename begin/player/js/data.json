@@ -1,1 +1,46 @@
-{"albums": ["\u7231\u5c31\u4e00\u4e2a\u5b57", "\u767d\u7f8a", "\u5243\u987b\u5200", "\u5343\u79a7", "\u4e0d\u4e8c\u81e3", "\u4e0d\u4e8c\u81e3", "\u6211\u8bb0\u5f97", "\u6211\u8bb0\u5f97", "\u53bb\u89c1\u4f60"], "trackNames": ["\u7231\u5c31\u4e00\u4e2a\u5b57 - \u5f20\u4fe1\u54f2", "\u767d\u7f8a - \u5f90\u79c9\u9f99,\u6c88\u4ee5\u8bda", "\u5243\u987b\u5200 - \u6c88\u4ee5\u8bda", "\u5343\u79a7 - \u5f90\u79c9\u9f99", "\u4e0d\u4e8c\u81e3 - \u5f90\u79c9\u9f99", "\u4e0d\u4e8c\u81e3 - \u5f90\u79c9\u9f99", "\u6211\u8bb0\u5f97 - \u5434\u82e5\u5e0c", "\u6211\u8bb0\u5f97 - \u8d75\u96f7", "\u53bb\u89c1\u4f60 - \u5f90\u79c9\u9f99"], "trackUrl": ["https://lx-sycdn.kuwo.cn/7e5370d8ff5c53a8ddde534cd0bac500/65cd67d8/resource/n3/19/77/1283165821.mp3?from=vip", "https://music.163.com/song/media/outer/url?id=514761281.mp3", "https://music.163.com/song/media/outer/url?id=1387623887.mp3", "https://music.163.com/song/media/outer/url?id=522510615.mp3", "https://music.163.com/song/media/outer/url?id=466370500.mp3", "https://music.163.com/song/media/outer/url?id=466370500.mp3", "https://er-sycdn.kuwo.cn/1bcc5297bc722af7470cf83f7c58a776/65cd809a/resource/30106/trackmedia/M500001mKrdr1yWrQn.mp3?from=vip", "https://lv-sycdn.kuwo.cn/ecc574545c23028a199978d22cf53c98/65cd80db/resource/30106/trackmedia/M500002WMib00Nnisj.mp3?from=vip", "https://music.163.com/song/media/outer/url?id=1354629987.mp3"], "bk": ["https://img4.kuwo.cn/star/albumcover/120/94/90/1956406170.jpg", "http://p4.music.126.net/tczb_7II9KzSuLQsVt89Gw==/109951163049336667.jpg?param=300x300", "http://p4.music.126.net/PpNyvE_cEPgEwkF3poYaow==/109951164582948890.jpg?param=300x300", "http://p4.music.126.net/_sblL2ZjBOtwLAL-3i01Fw==/109951163078474921.jpg?param=300x300", "http://p4.music.126.net/gWFj43fBzQbF6XUKBHkqJQ==/109951162879099253.jpg?param=300x300", "http://p4.music.126.net/gWFj43fBzQbF6XUKBHkqJQ==/109951162879099253.jpg?param=300x300", "https://img4.kuwo.cn/star/albumcover/120/36/68/2053586777.jpg", "https://img4.kuwo.cn/star/albumcover/120/46/52/952362939.jpg", "http://p4.music.126.net/yI7Pf2XGAitw5OuImEyuRg==/109951163954891400.jpg?param=300x300"]}
+{
+    "albums": [
+        "\u7231\u5c31\u4e00\u4e2a\u5b57",
+        "\u767d\u7f8a",
+        "\u5243\u987b\u5200",
+        "\u5343\u79a7",
+        "\u4e0d\u4e8c\u81e3",
+        "\u4e0d\u4e8c\u81e3",
+        "\u6211\u8bb0\u5f97",
+        "\u6211\u8bb0\u5f97",
+        "\u53bb\u89c1\u4f60"
+    ],
+    "trackNames": [
+        "\u7231\u5c31\u4e00\u4e2a\u5b57 - \u5f20\u4fe1\u54f2",
+        "\u767d\u7f8a - \u5f90\u79c9\u9f99,\u6c88\u4ee5\u8bda",
+        "\u5243\u987b\u5200 - \u6c88\u4ee5\u8bda",
+        "\u5343\u79a7 - \u5f90\u79c9\u9f99",
+        "\u4e0d\u4e8c\u81e3 - \u5f90\u79c9\u9f99",
+        "\u4e0d\u4e8c\u81e3 - \u5f90\u79c9\u9f99",
+        "\u6211\u8bb0\u5f97 - \u5434\u82e5\u5e0c",
+        "\u6211\u8bb0\u5f97 - \u8d75\u96f7",
+        "\u53bb\u89c1\u4f60 - \u5f90\u79c9\u9f99"
+    ],
+    "trackUrl": [
+        "https://lx-sycdn.kuwo.cn/7e5370d8ff5c53a8ddde534cd0bac500/65cd67d8/resource/n3/19/77/1283165821.mp3?from=vip",
+        "https://music.163.com/song/media/outer/url?id=514761281.mp3",
+        "https://music.163.com/song/media/outer/url?id=1387623887.mp3",
+        "https://music.163.com/song/media/outer/url?id=522510615.mp3",
+        "https://music.163.com/song/media/outer/url?id=466370500.mp3",
+        "https://music.163.com/song/media/outer/url?id=466370500.mp3",
+        "https://er-sycdn.kuwo.cn/1bcc5297bc722af7470cf83f7c58a776/65cd809a/resource/30106/trackmedia/M500001mKrdr1yWrQn.mp3?from=vip",
+        "https://lv-sycdn.kuwo.cn/ecc574545c23028a199978d22cf53c98/65cd80db/resource/30106/trackmedia/M500002WMib00Nnisj.mp3?from=vip",
+        "https://music.163.com/song/media/outer/url?id=1354629987.mp3"
+    ],
+    "bk": [
+        "https://img4.kuwo.cn/star/albumcover/120/94/90/1956406170.jpg",
+        "http://p4.music.126.net/tczb_7II9KzSuLQsVt89Gw==/109951163049336667.jpg?param=300x300",
+        "http://p4.music.126.net/PpNyvE_cEPgEwkF3poYaow==/109951164582948890.jpg?param=300x300",
+        "http://p4.music.126.net/_sblL2ZjBOtwLAL-3i01Fw==/109951163078474921.jpg?param=300x300",
+        "http://p4.music.126.net/gWFj43fBzQbF6XUKBHkqJQ==/109951162879099253.jpg?param=300x300",
+        "http://p4.music.126.net/gWFj43fBzQbF6XUKBHkqJQ==/109951162879099253.jpg?param=300x300",
+        "https://img4.kuwo.cn/star/albumcover/120/36/68/2053586777.jpg",
+        "https://img4.kuwo.cn/star/albumcover/120/46/52/952362939.jpg",
+        "http://p4.music.126.net/yI7Pf2XGAitw5OuImEyuRg==/109951163954891400.jpg?param=300x300"
+    ]
+}
